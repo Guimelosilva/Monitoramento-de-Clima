@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
+</head>
+<body>
+    <div class="fundo-dinamico" id="fundoDinamico"></div>
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Clima</h1>
+            <p>Previsão do tempo</p>
+        </header>
+        
+        <div class="area-busca">
+            <div class="container-busca">
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="entradaCidade" placeholder="Digite o nome da cidade..." value="São Paulo" autocomplete="off">
+                    <div id="sugestoesLista" class="sugestoes-lista"></div>
+                </div>
+                <button id="botaoBuscar">🔍 Buscar</button>
+            </div>
+            <button id="botaoLocalizacao" class="botao-localizacao">📍 Minha Localização</button>
+        </div>
+        
+        <!-- SEÇÃO DE FAVORITOS -->
+        <div class="favoritos-section">
+            <div class="favoritos-header">
+                <h3>⭐ Cidades Favoritas</h3>
+                <button id="botaoLimparFavoritos" class="btn-limpar">🗑️ Limpar tudo</button>
+            </div>
+            <div id="listaFavoritos" class="lista-favoritos">
+                <p class="sem-favoritos">Nenhuma cidade favorita ainda. Clique na ⭐ para adicionar!</p>
+            </div>
+        </div>
+        
+        <div id="resultado">
+            <div class="carregamento">
+                <div class="spinner"></div>
+                <p>Carregando clima...</p>
+            </div>
+        </div>
+        
+        <div id="previsao" style="display: none;">
+            <h3 class="titulo-secao">📅 Previsão para os próximos dias</h3>
+            <div class="container-previsao" id="listaPrevisao"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
