@@ -37,10 +37,6 @@ Criar uma ferramenta de consulta climática que seja:
 | 📱 **Responsivo** | Funciona perfeitamente no celular, tablet e desktop |
 | 🏠 **Estado/Região** | Exibe cidade, estado e país quando disponível |
 
----
-
-## 🖼️ Demonstração Visual
-
 ´´´
 ---
 
