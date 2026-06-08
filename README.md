@@ -1,6 +1,4 @@
-## 📄 README.md
 
-```markdown
 # 🌤️ Previão do tempo
 
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen)
